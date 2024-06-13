@@ -473,12 +473,17 @@
         </div>
 
 
-        <p class="footer_copy">&#169; 2021 copyright all right reserved to <a style="color:#069C54" href="https://jebusx33.github.io/JesusArias/" class="footer_copy ">Jesús Arias</a> </p>
+        <p class="footer_copy">&#169; <span id="anio-actual"></span>  copyright all right reserved to <a style="color:#069C54" href="https://www.jesusarias.com.ar" class="footer_copy ">Jesús Arias</a> </p>
     </footer>
     <!-- JS -->
     <script src="js/main.js"></script>
     <!-- SCROLLREVEAL -->
     <script src="https://unpkg.com/scrollreveal"></script>
+    <script>
+const fechaActual = new Date();
+const anioActual = fechaActual.getFullYear();
+document.getElementById("anio-actual").innerHTML = anioActual;
+</script>
 
 </body>
 
